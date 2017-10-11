@@ -28,10 +28,10 @@
       <file leaf-file-name="Calculator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Calculator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+            <state relative-caret-position="362">
+              <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
               <folding>
-                <element signature="e#1251#1293#0" expanded="false" />
+                <element signature="e#1313#1355#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,8 +74,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Calculator.scss" />
-        <option value="$PROJECT_DIR$/Calculator.js" />
         <option value="$PROJECT_DIR$/Calculator.html" />
+        <option value="$PROJECT_DIR$/Calculator.js" />
       </list>
     </option>
   </component>
@@ -238,7 +238,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4985000" />
+    <option name="totallyTimeSpent" value="5296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -309,10 +309,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Calculator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+        <state relative-caret-position="362">
+          <caret line="71" column="31" lean-forward="false" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
           <folding>
-            <element signature="e#1251#1293#0" expanded="false" />
+            <element signature="e#1313#1355#0" expanded="false" />
           </folding>
         </state>
       </provider>

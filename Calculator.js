@@ -64,14 +64,15 @@ function nine(){
      var nine = 9;
     notZero(nine);
  }*/
- function numberInput(number){
-    if(action == '0' || action ==''){
-      document.getElementById("result").innerHTML = number;
-    }
-
-    action = action + number;
-     document.getElementById("result").innerHTML = action;
-}
+ function numberInput(number) {
+     if (action == '0' || action == 0) {
+         action = number;
+         document.getElementById("result").innerHTML = action;
+     } else {
+         action = action + '' + number;
+         document.getElementById("result").innerHTML = action;
+     }
+ }
 
 
 /**
