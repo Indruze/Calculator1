@@ -1,5 +1,5 @@
-var result = 0;
-var action = 0;
+var result = '0';
+var action = '';
 
 
 window.onload = function() {
@@ -8,22 +8,70 @@ window.onload = function() {
     //alert('Valio'); dialogo langas
     document.getElementById("result").innerHTML = result;
 };
- function clear(){
-     result = 0;
+ function clearr(){
+     result = '0';
+     action = result;
      document.getElementById("result").innerHTML = result;
  }
 
- function zero(){
+ /*function zero(){
      var zero = 0;
-     action =  zero;
-     documnet.getElementById("result").innerHTML = zero;
+     //action += zero; //action = action = +zero;
+     notZero(zero);
  }
 
  function one(){
      var one = 1;
-     documnet.getElementById("result").innerHTML = one;
+     notZero(one);
  }
 
+ function two(){
+     var two = 2;
+     notZero(two);
+ }
+
+ function three(){
+     var three = 3;
+     notZero(three);
+ }
+
+ function four(){
+     var four = 4;
+     notZero(four);
+ }
+
+function five(){
+     var five = 5;
+    notZero(five);
+ }
+
+function six(){
+     var six = 6;
+    notZero(six);
+ }
+
+function seven(){
+     var seven = 7;
+    notZero(seven);
+ }
+
+function eight(){
+     var eight = 8;
+    notZero(eight);
+ }
+
+function nine(){
+     var nine = 9;
+    notZero(nine);
+ }*/
+ function numberInput(number){
+    if(action == '0' || action ==''){
+      document.getElementById("result").innerHTML = number;
+    }
+
+    action = action + number;
+     document.getElementById("result").innerHTML = action;
+}
 
 
 /**
