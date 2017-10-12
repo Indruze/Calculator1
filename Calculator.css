@@ -1,4 +1,28 @@
-p {
-  color: #ffffff; }
+body {
+  margin: auto 0;
+  background: #eee; }
+  body .calculator {
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 450px;
+    background: #dbe0ff;
+    font-size: 20px;
+    align-items: center; }
+    body .calculator #result {
+      background: #fff;
+      width: 400px;
+      height: 40px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 20px; }
+    body .calculator button {
+      height: 50px;
+      width: 90px;
+      margin: 1px 3px;
+      background: #fff;
+      border: 1px outset #ddd;
+      border-radius: 5px;
+      font-size: 20px;
+      text-align: center; }
 
 /*# sourceMappingURL=Calculator.css.map */
