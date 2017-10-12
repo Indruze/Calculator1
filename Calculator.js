@@ -1,7 +1,6 @@
-var result = '0';
-var action = '';
-var number = '';
-var operation = 'plus';
+var result = lastResult = action = number = '0';
+var operation = '';
+
 
 
 window.onload = function() {
@@ -11,8 +10,8 @@ window.onload = function() {
     document.getElementById("result").innerHTML = result;
 };
  function clearr(){
-     result = '0';
-     action = result;
+     result = lastResult = action ='0';
+     dots = 0;
      document.getElementById("result").innerHTML = result;
  }
 
@@ -67,7 +66,12 @@ function nine(){
     notZero(nine);
  }*/
  function numberInput(number) {
-     if (action == '0' || action == 0) {
+
+     if(digitLimit()) {
+        return false;
+     }
+
+     if (action == '' || action == 0) {
          action = number;
          document.getElementById("result").innerHTML = action;
      } else {
@@ -75,6 +79,15 @@ function nine(){
          document.getElementById("result").innerHTML = action;
      }
  }
+
+
+function digitLimit(){
+    if(action.length > 8){
+        alert('Pasiektas maksimalus ivesties limitas');
+        return true;
+    }
+    return false;
+}
 
  function plusNumbers(){
     result = action;
@@ -123,30 +136,37 @@ var dots = 0;
 
 function addDot(){
     if(dots == 0){
-        dots += 1;
         action=action + ".";
         document.getElementById('result').innerHTML = action;
     }
+    dots += 1;
 }
 
+
+
  function showResult() {
-     result = parseFloat(result);
-     if (operation == 'plus') {
-         result += parseFloat(action) //+ parseFloat(action); //parseFloat tekstini formata pakeicia i realiuosius skaicius.
+
+    lastResult = parseFloat(lastResult);
+
+    if(lastResult != ''){
+        result = lastResult;
+    }
+     if(operation == 'plus'){
+      lastResult = parseFloat(result) + parseFloat(action);
      }
-     else if(operation == 'minus'){
-         result -= parseFloat(action);
+     else if (operation == 'minus') {
+         lastResult = parseFloat(result) - parseFloat(action); //+ parseFloat(action); //parseFloat tekstini formata pakeicia i realiuosius skaicius.
      }
-     else if(operation == 'times') {
-         result *= parseFloat(action)
+     else if(operation == 'times'){
+         lastResult = parseFloat(result) * parseFloat(action);
      }
      else if(operation == 'divide') {
-         result /= parseFloat(action);
+         lastResult = parseFloat(result) / parseFloat(action);
      }
      else {
-         result = '0';
+         lastResult = '0';
      }
-     document.getElementById('result').innerHTML = result;
+     document.getElementById('result').innerHTML = lastResult;
 
      result = action = operation = ''; //Išvalome visus duomenis skaičiuotuve
  }
